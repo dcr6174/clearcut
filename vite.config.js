@@ -1,0 +1,4 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { VitePWA } from 'vite-plugin-pwa';
+export default defineConfig({ base: '/clearcut/', plugins: [react(), VitePWA({ registerType: 'autoUpdate', manifest: { name: 'CLEARCUT — AI Background Remover', short_name: 'CLEARCUT', description: 'Remove image backgrounds directly in your browser.', theme_color: '#131512', background_color: '#f2f1ec', display: 'standalone', icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }] }, workbox: { globPatterns: ['**/*.{js,css,html,svg,png}'], maximumFileSizeToCacheInBytes: 4000000 } })], worker: { format: 'es' }, build: { target: 'es2022', chunkSizeWarningLimit: 1200 } });

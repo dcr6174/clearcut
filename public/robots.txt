@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dcr6174.github.io/clearcut/sitemap.xml

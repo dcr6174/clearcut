@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/types.ts","./src/worker.ts","./src/lib/capabilities.ts","./src/lib/history.ts","./src/lib/render.ts","./src/providers/local.ts"],"version":"5.9.3"}

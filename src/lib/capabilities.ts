@@ -1,0 +1,1 @@
+export const capabilities={webgpu:!!(navigator as any).gpu,wasm:typeof WebAssembly!=='undefined',workers:typeof Worker!=='undefined',indexedDB:'indexedDB'in window,clipboard:!!navigator.clipboard,share:!!navigator.share,fileSystem:'showSaveFilePicker'in window};

@@ -1,0 +1,1 @@
+import{openDB}from'idb';const db=()=>openDB('clearcut',1,{upgrade(d){d.createObjectStore('history',{keyPath:'id'})}});export async function saveHistory(x:any){const d=await db();await d.put('history',{...x,id:crypto.randomUUID(),createdAt:Date.now()});}export async function clearHistory(){(await db()).clear('history')}
